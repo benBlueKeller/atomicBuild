@@ -1,0 +1,60 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <!-- Place favicon.ico in the root directory -->
+
+        <!--link rel="stylesheet" href="css/normalize.css">-->
+        <!-- <link rel="stylesheet" href="css/main.css"> -->
+        <link rel="stylesheet" href="sass/style.css">
+    </head>
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <!-- Add your site or application content here -->
+        <canvas	id="canvas1" width="1200" height="900"></canvas>
+        <div class="controls">
+            <input type="text" id="sym" maxlength="2`">
+            <button id="newEleInNewMole">New Molecule</button>
+            <button id="scrollDownEleList">Scroll Down eleList</button>
+            <button id="downLeft" class="roundButton">Down Left</button>
+            <button id="downRight" class="roundButton">Down Right</button>
+            <button id="upLeft" class="roundButton">Up Left</button>
+            <button id="upRight" class="roundButton">Up Right</button>
+            <button id="left" class="roundButton">Left</button>
+            <button id="right" class="roundButton">Right</button>
+            <div id="table">
+            </div>
+        </div>
+
+<!--         <script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-2.2.1.min.js"><\/script>')</script> -->
+        <script typr="text/javascript" src="C:\Users\cloudJumper\node_modules\jquery\dist\jquery.min.js"></script>
+        <script src="js/plugins.js"></script>
+        <script src="js/periodic.js"></script>
+        <script src="js/element.js"></script>
+        <script src="js/molecule.js"></script>
+        <script src="js/keystate.js"></script>
+        <script src="js/CanvasState.js"></script>
+        <!-- <script src="js/main.js"></script> -->
+        <script src="js/app.js"></script>
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='https://www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+        </script>
+    </body>
+</html>

@@ -1,0 +1,74 @@
+
+
+
+
+
+/**********************************************
+ future json?
+ **********************************************/
+
+/*1*/var 	Hydrogen = {
+	symbol: 'er'
+	row: 1
+	column: 1
+	num: 1
+}
+/*2*/var 	Helium = {
+	symbol: 'er'
+	row: 2
+	column: 1
+	num: 2
+}
+/*3*/var 	Lithium = {
+	symbol: 'er'
+	row: 3
+	column: 1
+	num: 3
+}
+/*4*/var 	Beryllium = {
+	symbol: 'er'
+	row: 4
+	column: 1
+	num: 4
+}
+/*5*/var 	Boron = {
+	symbol: 'er'
+	row: 5
+	column: 1
+	num: 5
+}
+/*6*/var 	Carbon = {
+	symbol: 'er'
+	row: 2
+	column: 2
+	num: 6
+}
+/*7*/var 	Nitrogen = {
+	symbol: 'er'
+	row: 3
+	column: 2
+	num: 7
+}
+/*8*/var 	Oxygen = {
+	symbol: 'er'
+	row: 4
+	column: 2
+	num: 8
+}
+/*9*/var 	Fluorine = {
+	symbol: 'er'
+	row: 5
+	column: 2
+	num: 9
+};
+
+var periodicList = [];
+periodicList.put(Hydrogen);
+periodicList.put(Helium);
+periodicList.put(Lithium);
+periodicList.put(Beryllium);
+periodicList.put(Boron);
+periodicList.put(Carbon);
+periodicList.put(Nitrogen);
+periodicList.put(Oxygen);
+periodicList.put(Fluorine);
