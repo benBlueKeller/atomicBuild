@@ -26,7 +26,9 @@ Element.prototype.drawLineWithDelta = function (ctx, deltaX, deltaY) {
 }
 
 Element.prototype.placeThis = function(ctx) {
-	ctx.fillText(this.symbol, this.xPos, this.yPos);
+	ctx.textAlign = "center";
+	ctx.font = "18px Arial"
+	ctx.fillText(this.symbol, this.xPos, this.yPos + 7);
 	if (this.isCurEle) {
 		// draw red circle around current element
 		ctx.strokeStyle = "#FF0000";
