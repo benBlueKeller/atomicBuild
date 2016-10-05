@@ -38,7 +38,15 @@ function distanceFormula(x1, y1, x2, y2) {
       x: find(x1, x2),
       y: find(y1, y2)
     };
+ }
 
+ /*** canvas-drawing functions ***/
+
+ function drawLine(ctx, x1, x2, y1, y2) {
+    ctx.beginPath();
+    ctx.moveTo(x1, y1);
+    ctx.lineTo(x2, y2);
+    ctx.stroke();
  }
 
 function CanvasState(canvas) {
