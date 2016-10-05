@@ -15,8 +15,30 @@ function createNewElement(canvas, posX, posY, newMolecule) {
     return ele;
 }
 
+
 function distanceFormula(x1, y1, x2, y2) {
     return Math.abs(Math.sqrt(Math.pow(x1 - x2, 2) + Math.pow(y1 - y2, 2)));
+ }
+
+/**Find point a certain distance along a line
+ * returns point that is a certain distance (d) from point 1 on line (x1, y1)-(x2,y2)
+ * @param  {int} d  distance from point 1 return point will be
+ * @param  {int} x1 x of point 1
+ * @param  {int} x2 y of point 1
+ * @param  {int} y1 x of point 2
+ * @param  {int} y2 y of point 2
+ * @return {object}    x and y of requested point
+ */
+ function pointOnLine(d, x1, x2, y1, y2) {
+    var dRatio = d / distanceFormula(x1, x2, y1, y2);
+    function find(point1, point2) {
+      return (1 - dRatio) * point1 + dRatio * point2;
+    }
+    return {
+      x: find(x1, x2),
+      y: find(y1, y2)
+    };
+
  }
 
 function CanvasState(canvas) {

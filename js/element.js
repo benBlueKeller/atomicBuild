@@ -25,6 +25,10 @@ Element.prototype.drawLineWithDelta = function (ctx, deltaX, deltaY) {
     ctx.stroke();
 }
 
+Element.prototype.drawBond = function (ctx, deltaX, deltaY) {
+	
+}
+
 Element.prototype.placeThis = function(ctx) {
 	ctx.textAlign = "center";
 	ctx.font = "18px Arial"
