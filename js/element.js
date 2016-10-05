@@ -23,7 +23,12 @@ Element.prototype.drawLineWithDelta = function (ctx, deltaX, deltaY) {
 }
 
 Element.prototype.drawBond = function (ctx, deltaX, deltaY) {
-	
+	var x2 = this.xPos + deltaX;
+    var y2 = this.yPos + deltaY;
+    var startPoint = pointOnLine(10, this.xPos, x2, this.yPos, y2);
+    var endPoint = pointOnLine(10, x2, this.xPos, y2, this.yPos);
+    drawLine(ctx, startPoint.x, endPoint.x, startPoint.y, endPoint.y);
+
 }
 
 Element.prototype.placeThis = function(ctx) {
