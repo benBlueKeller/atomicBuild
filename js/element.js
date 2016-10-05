@@ -44,22 +44,22 @@ Element.prototype.placeThis = function(ctx) {
 		ctx.strokeStyle = "#000";
 	}
 	if (this.hexULBondPres) {
-		this.drawLineWithDelta(ctx, -30, -50);
+		this.drawBond(ctx, -30, -50);
 	}
 	if (this.hexDLBondPres) {
-		this.drawLineWithDelta(ctx, -30, 50);
+		this.drawBond(ctx, -30, 50);
 	}
 	if (this.hexURBondPres) {
-		this.drawLineWithDelta(ctx, 30, -50);
+		this.drawBond(ctx, 30, -50);
 	}
 	if (this.hexDRBondPres) {
-		this.drawLineWithDelta(ctx, 30, 50);
+		this.drawBond(ctx, 30, 50);
 	}
 	if (this.hexLBondPres) {
-		this.drawLineWithDelta(ctx, -60, 0);
+		this.drawBond(ctx, -60, 0);
 	}
 	if (this.hexRBondPres) {
-		this.drawLineWithDelta(ctx, 60, 0);
+		this.drawBond(ctx, 60, 0);
 	}
 
 
