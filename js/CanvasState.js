@@ -43,6 +43,10 @@ function distanceFormula(x1, y1, x2, y2) {
  /*** canvas-drawing functions ***/
 
  function drawLine(ctx, x1, x2, y1, y2) {
+    if(arguments.length === 2 && typeof x1 === 'object') {
+      drawLine(ctx, x1.x1, x1.x2, x1.y1, x1.y2);
+      return;
+    }
     ctx.beginPath();
     ctx.moveTo(x1, y1);
     ctx.lineTo(x2, y2);
