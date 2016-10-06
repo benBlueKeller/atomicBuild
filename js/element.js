@@ -16,11 +16,6 @@ function Element(xPos, yPos, sym, molecule) {
     this.dragoffy = 0;
 }
 
-Element.prototype.drawLineWithDelta = function (ctx, deltaX, deltaY) {
-    var x2 = this.xPos + deltaX;
-    var y2 = this.yPos + deltaY;
-    drawLine(ctx, this.xPos, x2, this.yPos, y2);
-}
 
 Element.prototype.drawBond = function (ctx, deltaX, deltaY) {
 	var x2 = this.xPos + deltaX;
